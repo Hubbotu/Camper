@@ -61,3 +61,23 @@ T["Hiding in: "] = "Скроется через: "
 T["Hide After:"] = "Скрыть через:"
 T["seconds"] = "сек."
 
+-- Chat prints for when callbacks trigger
+T["Camper: You've set up camp. Click the \'Camper Button\' to share the Waypoint!"] = colorCamper:WrapTextInColorCode("Camper: ") 
+.. "Вы разбили лагерь. Нажмите кнопку \'Camper\', чтобы поделиться " .. colorWaypoint:WrapTextInColorCode("точкой назначения") .. "!"
+
+T["Camper: Detected Campfire nearby. If you want to share its [Waypoint]: please go towards it, and do /sit."] = colorCamper:WrapTextInColorCode("Camper: ") .. "Detected " .. colorCampfire:WrapTextInColorCode("Campfire ") .. "nearby." 
+.. " Если вы хотите поделиться его " .. colorWaypoint:WrapTextInColorCode("[точкой назначения]") .. ", подойдите к нему и используйте эмоцию " .. colorYello:WrapTextInColorCode("/сесть") .. "."
+
+T["Camper: Button Activated. Click to share the camp Waypoint!"] = colorCamper:WrapTextInColorCode("Camper: ") .. "Кнопка активирована. Нажмите, чтобы поделиться точкой назначения лагеря!"
+
+-- Wait for sitdown tooltip
+T["You need to sit down next to the camp for Camper to get its proper waypoint.\nPlease locate the campfire and do /sit."] = "Вам нужно сесть рядом с лагерей, чтобы Camper определил правильную " .. colorWaypoint:WrapTextInColorCode("точку назначения") .. ".\nПожалуйста, найдите костер и используйте эмоцию " 
+.. colorYello:WrapTextInColorCode("/сесть") .. "."
+
+
+T["[Debug] Click to say: "] = "[Отладка] Нажмите, чтобы сказать: "
+T["Waiting for /sit"] = colorWhite:WrapTextInColorCode("Ожидание ") .. colorYello:WrapTextInColorCode("/сесть")
+
+
+T["Camper: Please locate the campfire and do /sit before sharing."] = colorCamper:WrapTextInColorCode("Camper: ") 
+.. "Пожалуйста, найдите костер и используйте эмоцию " .. colorYello:WrapTextInColorCode("/сесть ") .. " перед отправкой."
