@@ -19,7 +19,9 @@ local colorDarkRed = CreateColor(0.68, 0, 0)
 local colorDarkBlu = CreateColor(0.12, 0.5, 1)
 
 local colorGeneralChat = CreateColor(1, 0.75, 0.75)
-local colorCamper = CreateColor(0.76, 0.33, 0.03)
+local colorCamper = CreateColor(1, 0.62, 0)
+local colorCampfire = CreateColor(0.8, 0.43, 0.23)
+local colorWaypoint = CreateColor(0.86, 0.86, 0)
 
 
 T["Camper Configuration"] = "Настройка Camper"
@@ -81,3 +83,33 @@ T["Waiting for /sit"] = colorWhite:WrapTextInColorCode("Ожидание ") .. c
 
 T["Camper: Please locate the campfire and do /sit before sharing."] = colorCamper:WrapTextInColorCode("Camper: ") 
 .. "Пожалуйста, найдите костер и используйте эмоцию " .. colorYello:WrapTextInColorCode("/сесть ") .. " перед отправкой."
+
+
+-- clickableLink.lua
+T["Camper: You've set up camp."] = colorCamper:WrapTextInColorCode("Camper: ") .. "Вы разбили лагерь."
+T["Camper: Camp successfully located!"] = colorCamper:WrapTextInColorCode("Camper: ") .. "Лагерь успешно обнаружен!"
+T["Camper: Can't locate Campfire. Can't share waypoint."] = colorCamper:WrapTextInColorCode("Camper: ") .. "Не удалось найти костер. Невозможно поделиться точкой на карте."
+T["Camper: Outdated link. Please locate/setup a new campfire to share the waypoint."] = colorCamper:WrapTextInColorCode("Camper: ") .. "Устаревшая ссылка. Пожалуйста, найдите или разведите новый костер, чтобы поделиться точкой."
+T["Camper: Can't share waypoint while in Combat. After it ends, click again to share."] = colorCamper:WrapTextInColorCode("Camper: ") 
+.. "Нельзя делиться точкой во время боя. После его окончания нажмите еще раз, чтобы отправить ссылку."
+T["Camper: After combat ends, please locate the campfire -> /sit."] = colorCamper:WrapTextInColorCode("Camper: ") .. "После окончания боя, пожалуйста, подойдите к костру и введите -> " .. colorYello:WrapTextInColorCode("/сесть") .. "."
+T["Outdated link. Please locate/setup a new campfire to share the waypoint."] = "Устаревшая ссылка. Пожалуйста, найдите или разведите новый костер, чтобы поделиться точкой."
+
+T["Link pending activation."] = "Ссылка " .. colorPurple:WrapTextInColorCode("ожидает активации.")
+T["Please locate the campfire and do /sit before sharing."] = colorWhite:WrapTextInColorCode("Пожалуйста, подойдите к костру и введите ") .. colorYello:WrapTextInColorCode("/сесть ") .. colorWhite:WrapTextInColorCode("перед отправкой ссылки.")
+
+T["Outdated link."] = "Устаревшая ссылка."
+T["Please locate/setup a new campfire to share the waypoint."] = colorGrae:WrapTextInColorCode("Пожалуйста, найдите или разведите новый костер, чтобы поделиться точкой.")
+
+
+T["Share Method:"] = "Способ отправки:"
+T["Select Sharing Method"] = "Выберите способ отправки"
+
+
+T["Hide Button After:"] = "Скрывать кнопку через:"
+
+T["Camper: A clickable link will be sent to your chatbox when you setup/find a campfire.(Default chat window)"] = colorCamper:WrapTextInColorCode("Camper: ") 
+.. "В ваш чат будет отправлена " .. colorYello:WrapTextInColorCode("кликабельная ссылка ") .. ", когда вы разобьете или найдете костер.(Окно чата по умолчанию)"
+
+T["Camper: A popup button will appear when you setup/find a campfire."] = colorCamper:WrapTextInColorCode("Camper: ") .. "При разведении или поиске костра " 
+.. colorYello:WrapTextInColorCode("всплывающая кнопка ") .. "появится на вашем экране."
